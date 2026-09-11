@@ -1,0 +1,76 @@
+{
+  "dataset_path": "data\\processed\\synthetic_water_consumption_2026_90d_6b_seed42.csv",
+  "audit_checks": {
+    "row_count": {
+      "passed": true,
+      "actual": 12960,
+      "expected": 12960
+    },
+    "building_count": {
+      "passed": true,
+      "actual": 6,
+      "expected": 6
+    },
+    "schema": {
+      "passed": true,
+      "missing_columns": [],
+      "total_columns": 18
+    },
+    "missing_values": {
+      "passed": true,
+      "critical_missing_count": 0,
+      "total_missing_count": 25516
+    },
+    "duplicates": {
+      "passed": true,
+      "duplicate_building_timestamp_count": 0
+    },
+    "ranges": {
+      "passed": true,
+      "negative_water_count": 0,
+      "negative_occupancy_count": 0,
+      "invalid_temperature_count": 0,
+      "min_water": 13.23,
+      "max_water": 1423.18
+    },
+    "anomaly_labels": {
+      "passed": true,
+      "normal_type_consistent": true,
+      "event_id_consistent": true,
+      "anomaly_row_count": 202,
+      "anomaly_rate": 0.01558641975308642
+    },
+    "event_continuity": {
+      "passed": true,
+      "event_count": 27,
+      "discontinuous_events": 0
+    }
+  },
+  "summary": {
+    "checks_passed": 8,
+    "checks_total": 8,
+    "all_passed": true
+  },
+  "diagnostics": {
+    "total_rows": 12960,
+    "buildings": [
+      "Academic Block",
+      "Administration",
+      "Engineering Block",
+      "Hostel A",
+      "Hostel B",
+      "Library"
+    ],
+    "anomaly_rate": 0.01558641975308642,
+    "Post-hoc diagnostic, NOT a production model evaluation.": {
+      "synthetic_ground_truth_available": true,
+      "scope": "Diagnostic telemetry validation"
+    }
+  },
+  "pytest": {
+    "command": "D:\\Aqua-Guard-main\\.venv\\Scripts\\python.exe -m pytest -q",
+    "return_code": 0,
+    "stdout": "................                                                         [100%]\n16 passed in 12.67s\n",
+    "stderr": ""
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "pred_static": {
+    "precision": 1.0,
+    "recall": 0.5384615384615384,
+    "f1": 0.7,
+    "false_positive_rate": 0.0,
+    "confusion_matrix": {
+      "true_positive": 49,
+      "false_positive": 0,
+      "true_negative": 3797,
+      "false_negative": 42
+    },
+    "anomalies_detected": 49,
+    "anomaly_detection_rate": 0.012602880658436214,
+    "potential_excess_litres_detected": 8310.48,
+    "event_recall": 1.0,
+    "mean_detection_delay_hours": 3.727272727272727
+  },
+  "pred_statistical": {
+    "precision": 0.725,
+    "recall": 0.31868131868131866,
+    "f1": 0.44274809160305345,
+    "false_positive_rate": 0.0028970239662891757,
+    "confusion_matrix": {
+      "true_positive": 29,
+      "false_positive": 11,
+      "true_negative": 3786,
+      "false_negative": 62
+    },
+    "anomalies_detected": 40,
+    "anomaly_detection_rate": 0.0102880658436214,
+    "potential_excess_litres_detected": 4381.65,
+    "event_recall": 0.9090909090909091,
+    "mean_detection_delay_hours": 0.5
+  },
+  "pred_ml": {
+    "precision": 0.96,
+    "recall": 0.7912087912087912,
+    "f1": 0.8674698795180723,
+    "false_positive_rate": 0.0007900974453515934,
+    "confusion_matrix": {
+      "true_positive": 72,
+      "false_positive": 3,
+      "true_negative": 3794,
+      "false_negative": 19
+    },
+    "anomalies_detected": 75,
+    "anomaly_detection_rate": 0.019290123456790122,
+    "potential_excess_litres_detected": 10805.95,
+    "event_recall": 1.0,
+    "mean_detection_delay_hours": 1.4545454545454546
+  },
+  "pred_hybrid": {
+    "precision": 0.9634146341463414,
+    "recall": 0.8681318681318682,
+    "f1": 0.9132947976878613,
+    "false_positive_rate": 0.0007900974453515934,
+    "confusion_matrix": {
+      "true_positive": 79,
+      "false_positive": 3,
+      "true_negative": 3794,
+      "false_negative": 12
+    },
+    "anomalies_detected": 82,
+    "anomaly_detection_rate": 0.02109053497942387,
+    "potential_excess_litres_detected": 11211.89,
+    "event_recall": 1.0,
+    "mean_detection_delay_hours": 0.6363636363636364
+  }
+}

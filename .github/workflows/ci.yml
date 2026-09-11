@@ -1,0 +1,40 @@
+name: AquaGuard CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test-and-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Generate pipeline artifacts
+        run: python tools/run_pipeline.py
+
+      - name: Run tests
+        run: pytest -q
+
+      - name: Run audit
+        run: python tools/run_data_audit.py
+
+      - name: Upload audit report
+        uses: actions/upload-artifact@v4
+        with:
+          name: audit-report
+          path: data/processed/audit_run/audit_report.json

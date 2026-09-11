@@ -1,0 +1,14 @@
+{
+  "final_method": "pred_hybrid",
+  "rows_total": 12960,
+  "rows_test": 3888,
+  "total_observed_litres_test": 1237509.6400000001,
+  "total_expected_litres_test": 1253848.87,
+  "potential_excess_litres_test": 16623.670000000002,
+  "anomalies_detected_test": 82,
+  "ground_truth_anomalies_test": 91,
+  "estimated_annualized_potential_if_pattern_persists_litres": 224727.39074074078,
+  "dataset_path": "data\\processed\\synthetic_water_consumption_2026_90d_6b_seed42.csv",
+  "results_path": "data\\processed\\anomaly_results.csv",
+  "comparison_path": "data\\processed\\model_comparison.json"
+}
